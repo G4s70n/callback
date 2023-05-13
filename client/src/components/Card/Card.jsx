@@ -38,7 +38,7 @@ const Card = ({id, name, types, height, weight, image, color}) => {
 
             <div className="card-cont-peso-altura">
                 <div className="card-bloque-height">
-                <img class="logo-altura" src="Card/iconHighWeight/Heigh.png" alt="icon" />
+                <img class="logo-altura" src="assets/Card/iconHighWeight/Heigh.png" alt="icon" />
                 <span className="card-value-peso">{`${height / 10} mts`}</span>
                 <span className="card-height-span">Height</span>
                 </div>
