@@ -1,0 +1,91 @@
+
+.container-buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container-buttons button{
+    margin: .3em 0px;
+    color: #c2c2c4;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: .9em;
+    padding: .3em .8em;
+    cursor: pointer;
+    font-size: .9em;
+}
+
+
+.icon-login-1-navBar,
+.icon-sing-up-narBar{
+    font-size: 14px;
+    margin-right: -.4em;
+}
+
+.icon-user-navBar {
+    font-size: 20px!important;
+    width:100%;
+}
+
+.profile-icon-button{
+    display: flex;
+    align-items: center;
+}
+
+
+.profile-icon-button:hover{
+    color: #4bc9ff;
+}
+.container-buttons button:hover{
+    color: #4bc9ff;
+}
+
+
+/* Cuando está registrado */
+
+.profile-container{
+    position: relative;
+    display: flex;
+    height: 40px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-right: .5em;
+    color: #4bc9ff;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+
+.button-salir{
+    display: none;
+    width: 100px;
+    color: white;
+    position: absolute;
+    top: 2em;
+    left: 1.1em;
+}
+
+.profile-container:hover .button-salir{
+    display: block;
+}
+
+.profile-container span{
+    margin-left: .3em;
+}
+
+.profile-container button{
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 60px;  
+    margin-top: .3em;
+}
+
+.profile-container button:hover{
+    background-color: #4bc9ff;
+    cursor: pointer;
+}
+
