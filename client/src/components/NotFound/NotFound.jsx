@@ -8,7 +8,7 @@ const NotFound = () => {
         <div className="not-found-container">
             <div className="logo-not-found">
                 <span className='cuatro-not-found'>4</span>
-                <img className="img-not-found" src="/assets/Not-found/not-found.webp" alt="logo" />
+                <img className="img-not-found" src="assets/Not-found/not-found.webp" alt="logo" />
                 <span className='cuatro-not-found'>4</span>
             </div>
             <span className="oh-no">¡Oh, no!</span>

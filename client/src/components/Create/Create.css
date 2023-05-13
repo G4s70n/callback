@@ -18,7 +18,7 @@
   margin-right: auto;
   position: relative;
   margin-bottom: 10em;
-  background-image: url('/assets/Create/pokeball.webp');
+  background-image: url('assets/Create/pokeball.webp');
   background-size:contain; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
   background-position: center; /* Centra la imagen en el elemento */
   background-repeat: no-repeat;
@@ -277,7 +277,7 @@ font-size: 1.3rem;
   text-align: center;
   position: relative;
   margin: 0em .5em;
-  background-image: url('/assets/Create/pokeball.webp');
+  background-image: url('assets/Create/pokeball.webp');
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
   background-position: center; /* Centra la imagen en el elemento */
   background-size: 60%;
@@ -470,7 +470,7 @@ font-size: 1.3rem;
 
 .btn-crear-form {
   background-color: #26aa3e;
-  background-image: url('/assets/Create/flechas-animadas.webp');
+  background-image: url('assets/Create/flechas-animadas.webp');
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
   background-position: 86%; /* Centra la imagen en el elemento */
   background-size: 18%;
@@ -526,7 +526,7 @@ font-size: 1.3rem;
   border-radius: 20px;
   padding: 1em 1em 8em 1em;
   background-color: rgba(255, 0, 0, 0.059);
-  background-image: url('/assets/Create/imgs-error.webp');
+  background-image: url('assets/Create/imgs-error.webp');
   background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el elemento */
   background-position:bottom; /* Centra la imagen en el elemento */
   background-size: 40%;

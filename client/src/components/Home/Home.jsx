@@ -137,7 +137,7 @@ import {
     if( filterPokemons.length === 0 ){
       return(
         <div className="loading-home">
-        <img src="/assets/Loading/loading.gif" alt="gif loading" />
+        <img src="assets/Loading/loading.gif" alt="gif loading" />
         <h2>Loading...</h2>
         </div>
       )
@@ -219,7 +219,7 @@ import {
     filterPokemons[0] === 'not found' ? (
 
       <div className="home-container-sin-resultados" >
-        <img src="/assets/Home/sin-resultados.webp" alt="imagen sin resultados" />
+        <img src="assets/Home/sin-resultados.webp" alt="imagen sin resultados" />
         <h2>No se encontró ningún pokémon </h2>
       </div>
 

@@ -57,7 +57,7 @@ const CardDetail = (props) => {
           <NavBar />
         </div>
         <img className="card-d-img-not-found"
-          src="/assets/PokemonDetail/not-found.webp"
+          src="assets/PokemonDetail/not-found.webp"
           alt="imagen pikachu"
         />
         <h2>Oops! Pokémon no encontrado...</h2>
@@ -319,7 +319,7 @@ const CardDetail = (props) => {
           </>
         ) : (
           <div className="card-d-loading">
-            <img src="/assets/Loading/loading.gif" alt="gif loading" />
+            <img src="assets/Loading/loading.gif" alt="gif loading" />
             <h2>Loading...</h2>
           </div>
         )}
