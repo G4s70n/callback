@@ -319,7 +319,7 @@ const CardDetail = (props) => {
           </>
         ) : (
           <div className="card-d-loading">
-            <img src="assets/Loading/loading.gif" alt="gif loading" />
+            <img src="/poke/assets/Loading/loading.gif" alt="gif loading" />
             <h2>Loading...</h2>
           </div>
         )}

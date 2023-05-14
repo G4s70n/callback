@@ -35,7 +35,7 @@
 }
 
 .landing-cont-logos {
-  background: linear-gradient(130deg, rgba(246, 101, 54, 1) 0%, rgba(255, 184, 57, 1) 100%);
+/*   background: linear-gradient(130deg, rgba(246, 101, 54, 1) 0%, rgba(255, 184, 57, 1) 100%); */
   width: 80%;
   height: auto;
   display: flex;
@@ -124,7 +124,7 @@
 
 
 .landing-cont-logos {
-  background-image: url('assets/LandingPage/circles.webp');
+  background-image: url('LandingPage/circles-background.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }

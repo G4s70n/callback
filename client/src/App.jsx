@@ -10,22 +10,21 @@ import NotFound from './components/NotFound/NotFound.jsx';
 
 
 function App() {
-
   return (
     <div className="App">
       <Switch>
-        {/* poner /pokemon/ en la landing */}
-        <Route exact path="/poke/" component={LandingPage} />
+        <Route exact path="/" component={LandingPage} />
         <Route exact path="/home" component={Home} />
-        <Route path="/home-page=:page?" component={Home} /> 
-        <Route path="/pokemon/:id" component={CardDetail} />
+        <Route path="/home-page=:page?" component={Home} />
+        <Route exact path="/pokemon/:id" component={CardDetail} />
         <Route exact path="/create" component={Create} />
         <Route exact path="/about" component={About} />
         <Route path="*" component={NotFound} />
       </Switch>
     </div>
   );
-  }  
+}
+
 
 export default App
 

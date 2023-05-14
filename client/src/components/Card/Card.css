@@ -40,7 +40,7 @@
 
 
 .card:hover{
-      Filter: grayscale(1) contrast(1); 
+      filter: grayscale(1) contrast(1); 
       
 }
 
