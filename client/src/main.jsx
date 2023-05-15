@@ -22,34 +22,13 @@ axios.defaults.baseURL="https://poke-back.up.railway.app/";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-
-  <Auth0Provider domain={domain} clientId={clientId} authorizationParams={{redirect_uri: window.location.origin}} >
-   <Provider store={store}>
-    <BrowserRouter>
-    <ScrollToTop />
-      <App />
-      </BrowserRouter>
-   </Provider>
-  </Auth0Provider>
-);
-
-
-
-
-/* const handleRedirectCallback = (appState) => {
-  // redireccionar al usuario a una URL predeterminada
-  history.push(appState?.returnTo || 'http://localhost:3000/#/create');
-};
-
-
-ReactDOM.createRoot(document.getElementById("root")).render(
   <Auth0Provider 
   domain={domain} 
   clientId={clientId} 
   authorizationParams={{
-    redirect_uri: "http://localhost:3000/#/create"
+    redirect_uri: "https://g4s70n.github.io/poke/#/home"
     }}
-  onRedirectCallback={handleRedirectCallback}>
+  >
     <Provider store={store}>
       <HashRouter>
         <ScrollToTop />
@@ -58,4 +37,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </Provider>
   </Auth0Provider>
 );
- */
