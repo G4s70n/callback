@@ -124,7 +124,7 @@
 
 
 .landing-cont-logos {
-  background-image: url('LandingPage/circles-background.webp');
+  background-image: url('/poke/assets/LandingPage/circles-background.webp');
   background-size: cover;
   background-repeat: no-repeat;
 }
