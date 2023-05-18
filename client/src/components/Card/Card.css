@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .card {
   border-radius: 5px;
   padding: 20px;
@@ -7,6 +14,7 @@
   position: relative;
  /* Color por defecto para los Pokemons nuevos */
  background: rgb(36,157,195);
+ background: -o-radial-gradient(circle, rgba(36,157,195,1) 35%, rgba(61,88,105,1) 100%);
  background: radial-gradient(circle, rgba(36,157,195,1) 35%, rgba(61,88,105,1) 100%);
   height: 385px;
   margin-bottom: 4em;
@@ -23,6 +31,8 @@
   left: 0;
   right: 0;
   height: 200px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(0, 0, 0)), to(transparent));
+  background-image: -o-linear-gradient(bottom, rgb(0, 0, 0), transparent);
   background-image: linear-gradient(to top, rgb(0, 0, 0), transparent);
 }
 
@@ -35,12 +45,15 @@
   right: 0px;
   height: 200px;
   width: 240px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.578)), to(transparent));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.578), transparent);
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.578), transparent);
 }
 
 
 .card:hover{
-      filter: grayscale(1) contrast(1); 
+      -webkit-filter: grayscale(1) contrast(1);
+              filter: grayscale(1) contrast(1); 
       
 }
 
@@ -48,7 +61,7 @@
   position: absolute;
   z-index: 10;
   margin-top: -38px;
-  height: 220px;
+  height: 200px;
   left: 20%;
   -webkit-filter: contrast(6);
           filter: contrast(6);
@@ -71,10 +84,12 @@
 .card-name{
   position: absolute;
   z-index: 1;
-  top: 55%;
+  top: 52%;
   color: rgb(224, 224, 224);
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   font-size: 1.5rem;
   border-top: 1px solid #252b31;
   width: 75%;
@@ -93,12 +108,16 @@
   width: 100%;
   top: 67%;
   left: 50%;
-  transform: translate(-50%, 70%);
+  -webkit-transform: translate(-50%, 70%);
+      -ms-transform: translate(-50%, 70%);
+          transform: translate(-50%, 70%);
   z-index:1;
 }
 
 .card-types-1,
 .card-types-2{
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   border-radius: 5px;
   padding: .1em .5em;
@@ -144,11 +163,17 @@
   border-radius: 5px;
   position:absolute;
   bottom: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: 4;
   padding: .6em .5em;
   background: rgb(31,31,31);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(31,31,31,1)), color-stop(52%, rgba(5,5,5,1)));
+  background: -o-linear-gradient(top, rgba(31,31,31,1) 0%, rgba(5,5,5,1) 52%);
   background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(5,5,5,1) 52%);
 }
 
@@ -201,56 +226,67 @@
   /* BACKGROUND-COLOR CARDS */
   .card-color-red {
     background: rgb(175,53,53);
+    background: -o-radial-gradient(circle, rgb(142, 42, 42) 35%, rgba(6, 6, 6, 0.824) 110%);
     background: radial-gradient(circle, rgb(142, 42, 42) 35%, rgba(6, 6, 6, 0.824) 110%);
   }
   
   .card-color-orange {
     background: rgb(142,97,42);
+background: -o-radial-gradient(circle, rgba(142,97,42,1) 35%, rgba(6,6,6,1) 110%);
 background: radial-gradient(circle, rgba(142,97,42,1) 35%, rgba(6,6,6,1) 110%);
   }
   
   .card-color-yellow {
     background: rgb(142,124,42);
+background: -o-radial-gradient(circle, rgba(142,124,42,1) 35%, rgba(6,6,6,1) 110%);
 background: radial-gradient(circle, rgba(142,124,42,1) 35%, rgba(6,6,6,1) 110%);
   }
   
   .card-color-green {
     background: rgb(89, 184, 114);
+    background: -o-radial-gradient(circle, rgb(71, 144, 53) 35%, rgba(20,37,15,1) 110%);
     background: radial-gradient(circle, rgb(71, 144, 53) 35%, rgba(20,37,15,1) 110%);
   }
 
   .card-color-blue {
     background: rgb(42,91,142);
+    background: -o-radial-gradient(circle, rgba(42,91,142,1) 35%, rgba(6,6,6,1) 110%);
     background: radial-gradient(circle, rgba(42,91,142,1) 35%, rgba(6,6,6,1) 110%);
   }
   
   .card-color-purple {
     background: rgb(95,42,142);
+background: -o-radial-gradient(circle, rgba(95,42,142,1) 35%, rgba(6,6,6,1) 110%);
 background: radial-gradient(circle, rgba(95,42,142,1) 35%, rgba(6,6,6,1) 110%);
   }
   
   .card-color-pink {
     background: rgb(142,42,136);
+background: -o-radial-gradient(circle, rgba(142,42,136,1) 35%, rgba(6,6,6,1) 110%);
 background: radial-gradient(circle, rgba(142,42,136,1) 35%, rgba(6,6,6,1) 110%);
   }
   
   .card-color-brown {
     background: rgb(142,67,42);
+    background: -o-radial-gradient(circle, rgba(142,67,42,1) 35%, rgba(6,6,6,1) 110%);
     background: radial-gradient(circle, rgba(142,67,42,1) 35%, rgba(6,6,6,1) 110%);
   }
   
   .card-color-grey {
     background: rgb(75,75,75);
+background: -o-radial-gradient(circle, rgba(75,75,75,1) 35%, rgba(6,6,6,1) 110%);
 background: radial-gradient(circle, rgba(75,75,75,1) 35%, rgba(6,6,6,1) 110%);
   }
   
   .card-color-black {
     background: rgb(25,41,73);
+background: -o-radial-gradient(circle, rgba(25,41,73,1) 35%, rgba(6,6,6,1) 110%);
 background: radial-gradient(circle, rgba(25,41,73,1) 35%, rgba(6,6,6,1) 110%);
   }
   
   .card-color-white {
     background: rgb(159,159,159);
+background: -o-radial-gradient(circle, rgba(159,159,159,1) 35%, rgba(61,88,105,1) 110%);
 background: radial-gradient(circle, rgba(159,159,159,1) 35%, rgba(61,88,105,1) 110%);
   }
   
@@ -321,16 +357,18 @@ background: radial-gradient(circle, rgba(159,159,159,1) 35%, rgba(61,88,105,1) 1
 
   /* LOGO BACKGROUND CARD */
   .card-svg-bck-2 {
-    display: none !important;
+    display: none !important;    
   }
 
   .card-svg-bck-1 {
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     position: absolute;
-    top: -110%;
+    top: -200%;
     left: 50%;
-    transform: translate(-50%, -110%);
+    -webkit-transform: translate(-50%, -110%);
+        -ms-transform: translate(-50%, -110%);
+            transform: translate(-50%, -110%);
     -webkit-filter: invert(100%) opacity(30%) blur(1px);
             filter: invert(100%) opacity(30%) blur(1px);
   }
@@ -388,24 +426,30 @@ background: radial-gradient(circle, rgba(159,159,159,1) 35%, rgba(61,88,105,1) 1
 /* Estilo para la animación */
 @-webkit-keyframes zoom {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes zoom {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
