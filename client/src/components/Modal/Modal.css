@@ -1,69 +1,85 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Estilos para el contenedor de la ventana modal */
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* transparencia */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     -webkit-backdrop-filter: blur(1px);
-             backdrop-filter: blur(1px); 
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* transparencia */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+   -webkit-backdrop-filter: blur(1px);
+           backdrop-filter: blur(1px); 
+}
 
 
-  /* Estilos para el contenido de la ventana modal */
-  .modal-content {
-    position: relative;
-    background-color: rgb(19 21 27);
-    width: 300px;
-    height: 160px;
-    padding: .5em 1em 1em 1em;
-    text-align: center;
-    border-radius: 6px;
-    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+/* Estilos para el contenido de la ventana modal */
+.modal-content {
+  position: relative;
+  background-color: rgb(19 21 27);
+  width: 300px;
+  height: 160px;
+  padding: .5em 1em 1em 1em;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+ /*  transform: translateY(-500px); */
+  -webkit-animation: movedown 1.8s ease-in-out forwards;
+          animation: movedown 1.8s ease-in-out forwards;
+}
+
+@-webkit-keyframes movedown {
+  from {
+    opacity: 0; /* Establecer la opacidad inicial en 0 */
    /*  transform: translateY(-500px); */
-    -webkit-animation: movedown 1.8s ease-in-out forwards;
-            animation: movedown 1.8s ease-in-out forwards;
   }
+  to {
+    opacity: 1; /* Aumentar gradualmente la opacidad */
+   /*  transform: translateY(0); */
+  }
+}
 
-  @-webkit-keyframes movedown {
-    from {
-      opacity: 0; /* Establecer la opacidad inicial en 0 */
-     /*  transform: translateY(-500px); */
-    }
-    to {
-      opacity: 1; /* Aumentar gradualmente la opacidad */
-     /*  transform: translateY(0); */
-    }
+@keyframes movedown {
+  from {
+    opacity: 0; /* Establecer la opacidad inicial en 0 */
+   /*  transform: translateY(-500px); */
   }
+  to {
+    opacity: 1; /* Aumentar gradualmente la opacidad */
+   /*  transform: translateY(0); */
+  }
+}
 
-  @keyframes movedown {
-    from {
-      opacity: 0; /* Establecer la opacidad inicial en 0 */
-     /*  transform: translateY(-500px); */
-    }
-    to {
-      opacity: 1; /* Aumentar gradualmente la opacidad */
-     /*  transform: translateY(0); */
-    }
-  }
+.btn-modal{
+  background-color: rgb(255, 116, 36);
+  color: rgb(255, 255, 255);
+  padding: .4em 1.8em;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 25px;
+  left: 24%;
+  -webkit-transform:translate(24%);
+      -ms-transform:translate(24%);
+          transform:translate(24%);
+  text-align: center;
+  font-weight: 600;
+}
 
-  .btn-modal{
-    background-color: rgb(255, 116, 36);
-    color: rgb(255, 255, 255);
-    padding: .4em 1.8em;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 25px;
-    left: 24%;
-    transform:translate(24%);
-    text-align: center;
-    font-weight: 600;
-  }
-
-  .mensaje-modal{
-    font-size: 1.2rem;
-  }
+.mensaje-modal{
+  font-size: 1.2rem;
+}

@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .home-container{
   padding-top: 0.1px;
 }
@@ -27,9 +34,13 @@
 /* form style */
 .form {
   font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 0.5rem;
- align-items: center;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
   width: var(--width-of-input);
   position: relative;
   isolation: isolate;
@@ -44,7 +55,8 @@
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 /* label styling */
 label {
@@ -52,8 +64,12 @@ label {
   padding: 0.8em;
   height: 40px;
   padding-inline: var(--inline-padding-of-input);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search,.close-btn {
@@ -113,6 +129,14 @@ svg {
   fill: var(--active-color);
 }
 /* showing close button when typing */
+.input:not(:-moz-placeholder-shown) ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+}
+.input:not(:-ms-input-placeholder) ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+}
 .input:not(:placeholder-shown) ~ .close-btn {
   opacity: 1;
   visibility: visible;
@@ -136,18 +160,24 @@ input:-webkit-autofill:active {
 
 .home-filters-label{
 text-align: center;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 
 
 select {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white;
   width: 100%;
   border-radius: 10px;
   padding: .5em 0em .5em 0em;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin-inline: 2em 0em;
   border: none;
   background: #283542;
@@ -229,14 +259,20 @@ select::-webkit-scrollbar-thumb {
   height: 100%;
   padding: 7em .7em 0 .7em;
   border-right: 1px solid #181a1f;
-  box-shadow: #181a1f 4px 0px 6px;
+  -webkit-box-shadow: #181a1f 4px 0px 6px;
+          box-shadow: #181a1f 4px 0px 6px;
 }
 
 .home-card-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: 18%;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: auto;
   padding: 0em 2em 0em 2em;
   min-height: 100vh;
@@ -258,6 +294,7 @@ select::-webkit-scrollbar-thumb {
 }
 
 .home-btn-filters:hover{
+ background: -o-linear-gradient(350deg, #007acc, #46a3e1);
  background: linear-gradient(100deg, #007acc, #46a3e1); 
 }
 
@@ -293,7 +330,8 @@ select::-webkit-scrollbar-thumb {
     height:35px;
     border-radius:100%;
     font-size: 1rem;
-    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
     margin: .2em;
     cursor: pointer;
 }
@@ -321,12 +359,22 @@ select::-webkit-scrollbar-thumb {
   
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 .loading-home{
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+     -ms-flex-direction: column;
+         flex-direction: column;
+ -webkit-box-pack: center;
+     -ms-flex-pack: center;
+         justify-content: center;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
  width: 100vw;
  height: 100vh;
+ font-family: 'Bruno Ace SC'!important;
 }

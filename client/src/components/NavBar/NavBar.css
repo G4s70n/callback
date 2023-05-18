@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .nav-logo{
   width: 10%;
   margin-left: 1em;
@@ -52,6 +59,7 @@ ul{
   text-decoration: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 .nav-container {
   position: relative;
   top: 0px;
@@ -59,23 +67,32 @@ ul{
   width: 100%;
    background-color: #1d1f23;
    border-bottom: 1px solid #181a1f;
-   box-shadow: #181a1f 0px 4px 6px;
+   -webkit-box-shadow: #181a1f 0px 4px 6px;
+           box-shadow: #181a1f 0px 4px 6px;
  
   padding: 1em 1em .5em 1em;
-  font-family: 'Bruno Ace SC', cursive !important;
+  font-family: 'Bruno Ace SC'!important;
 }
 
 .nav-content{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0em 1em;
 
 }
 
 .nav-content ul{
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
 }
 
@@ -92,9 +109,9 @@ ul{
 .nav-content ul li a:hover{
   border-radius: 5px;
   outline: 1px solid #00aeef;
-  box-shadow: 0 0 1px rgba(0,174,239,.6), 0 0 2px rgba(0,174,239,.6), 0 0 3px rgba(0,174,239,.6), 0 0 6px rgba(0,174,239,.6);
+  -webkit-box-shadow: 0 0 1px rgba(0,174,239,.6), 0 0 2px rgba(0,174,239,.6), 0 0 3px rgba(0,174,239,.6), 0 0 6px rgba(0,174,239,.6);
+          box-shadow: 0 0 1px rgba(0,174,239,.6), 0 0 2px rgba(0,174,239,.6), 0 0 3px rgba(0,174,239,.6), 0 0 6px rgba(0,174,239,.6);
 /*   background: rgb(59,83,134);
   background: linear-gradient(94deg, rgba(59,83,134,1) 0%, rgba(60,70,103,1) 100%); */
   background-color: rgba(0, 195, 255, 0.436);
 }
-

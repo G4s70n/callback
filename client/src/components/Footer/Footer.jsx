@@ -6,7 +6,7 @@ import "./Footer.css"
 const Footer = () => {
     return(
         <footer>
-            <p>Desarrollado por Gastón Nieto 💻😃</p>
+            <p>Desarrollado por Gastón Nieto 💻</p>
             <span>|</span>
             <Link to='/about'>
             <a>Contacto</a>

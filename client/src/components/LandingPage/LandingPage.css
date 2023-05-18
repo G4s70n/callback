@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .btn {
   background: #fde55a;
   color: #313430;
@@ -7,8 +14,11 @@
   border: none;
   border-radius: 0.5em;
   cursor: pointer;
-  transition-duration: 0.4s;
-  box-shadow: 0px 5px 10px 1px #dd6e42;
+  -webkit-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-box-shadow: 0px 5px 10px 1px #dd6e42;
+          box-shadow: 0px 5px 10px 1px #dd6e42;
 }
 
 .btn:hover {
@@ -26,11 +36,18 @@
 
 
 .landing-cont {
+  background: -o-linear-gradient(138deg, rgba(0, 188, 212, 1) 0%, rgba(7, 58, 187, 1) 100%);
   background: linear-gradient(312deg, rgba(0, 188, 212, 1) 0%, rgba(7, 58, 187, 1) 100%);
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: -90px;
 }
 
@@ -38,19 +55,29 @@
 /*   background: linear-gradient(130deg, rgba(246, 101, 54, 1) 0%, rgba(255, 184, 57, 1) 100%); */
   width: 80%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-radius: 7px;
   padding: 5%;
   position: relative;
-  box-shadow: 0px 10px 50px 3px rgba(0, 0, 0, 0.258);
+  -webkit-box-shadow: 0px 10px 50px 3px rgba(0, 0, 0, 0.258);
+          box-shadow: 0px 10px 50px 3px rgba(0, 0, 0, 0.258);
 }
 
 
 .landing-cont-logo-poke {
   width: 44%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .landing-cont-imgs {
@@ -84,29 +111,35 @@
 
 @-webkit-keyframes movePikachu {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 
   50% {
-    transform: translate(10px, 10px);
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
   }
 
   100% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
 @keyframes movePikachu {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 
   50% {
-    transform: translate(10px, 10px);
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px);
   }
 
   100% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
@@ -132,7 +165,9 @@
 
 @media screen and (max-width: 768px) {
   .landing-cont {
-    align-items: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding-top: 5%;
     min-width: 370px;
     min-height: 100%;
