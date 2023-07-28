@@ -12,7 +12,7 @@ import "./CardDetail.css";
 import NavBar from "../NavBar/NavBar.jsx";
 import Footer from '../Footer/Footer.jsx';
 
-import { VscArrowRight } from 'react-icons/Vsc';
+import { VscArrowRight } from 'react-icons/vsc';
 
 
 
