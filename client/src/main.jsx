@@ -17,7 +17,7 @@ const clientId =import.meta.env.VITE_AUTHO_CLIENT_ID;
 
 
 /* axios.defaults.baseURL="http://localhost:3001"; */
-axios.defaults.baseURL="https://poke-back.up.railway.app/";
+axios.defaults.baseURL="https://pokemon-app-backend.onrender.com";
 
 
 
